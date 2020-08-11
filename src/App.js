@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import Section from './components/Section';
+import Project from './components/Project';
+import Footer from './components/Footer';
 import './App.css';
+import { theme } from './util/theme';
+import { ThemeProvider } from 'styled-components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <div className='container'>
+      <Header />
+      <Section />
+      <Project />
     </div>
-  );
-}
+    <Footer />
+  </ThemeProvider>
+);
 
 export default App;
