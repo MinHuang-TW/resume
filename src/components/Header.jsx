@@ -60,6 +60,7 @@ const Title = styled.div`
 
   img {
     width: 8rem;
+    height: 8rem;
     margin-top: 1rem;
   }
 `;

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 const Button = styled.a`
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   text-decoration: none;
   border: 1px solid white;
   background: transparent;
