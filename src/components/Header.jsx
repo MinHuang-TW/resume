@@ -1,6 +1,6 @@
 import React from 'react';
 import List from '../elements/List';
-import Photo from '../images/photo.png';
+import Photo from '../images/photo.jpg';
 import styled from 'styled-components';
 
 const Header = () => (
@@ -61,6 +61,7 @@ const Title = styled.div`
   img {
     width: 8rem;
     height: 8rem;
+    border-radius: 50%;
     margin-top: 1rem;
   }
 `;
