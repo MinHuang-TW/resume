@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Footer = () => (
   <Foot>
     <Container>
-      <FooterButton href='https://github.com/MinHuang-TW'>
+      <FooterButton href={process.env.REACT_APP_URL} target='_blank'>
         download resume
       </FooterButton>
       <FooterButton href='mailto:h.min719@gmail.com'>mail me</FooterButton>

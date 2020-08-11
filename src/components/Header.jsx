@@ -67,7 +67,7 @@ const Title = styled.div`
 `;
 
 const Block = styled.section`
-  margin-top: -3.2rem;
+  margin-top: -2.4rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

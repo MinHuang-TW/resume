@@ -19,12 +19,15 @@ body {
   opacity: 0.2;
   padding: 0px;
   box-sizing: border-box;
+  background: transparent;
 }
 ::-webkit-scrollbar-track {
   border: 1px solid rgba(255, 255, 255, 0.28);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   border: 1px solid rgba(255, 255, 255, 0.38);
+  background: transparent;
 }
 
 * {

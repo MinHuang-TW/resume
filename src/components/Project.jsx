@@ -98,7 +98,7 @@ const ProjectBlock = styled.div`
     color: ${(props) => props.theme.textDark};
 
     span {
-      color: white;
+      color: rgba(255, 255, 255, 0.87);
       text-transform: uppercase;
     }
   }
