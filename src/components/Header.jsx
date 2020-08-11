@@ -1,6 +1,7 @@
 import React from 'react';
 import List from '../elements/List';
-import Photo from '../images/photo.jpg';
+import Photo from '../images/photo.webp';
+import PhotoJPG from '../images/photo.jpg';
 import styled from 'styled-components';
 
 const Header = () => (
@@ -9,7 +10,10 @@ const Header = () => (
       <h1>
         Hello<strong>!</strong>
       </h1>
-      <img src={Photo} alt='Min Huang' />
+      <picture>
+        <source srcSet={Photo} type='image/webp' />
+        <img src={PhotoJPG} alt='Min Huang' />
+      </picture>
     </Title>
 
     <Block>
