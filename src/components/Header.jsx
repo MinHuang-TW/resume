@@ -121,7 +121,7 @@ const Container = styled.header`
   &::before {
     content: '';
     width: 100vw;
-    height: 22rem;
+    height: 23rem;
     position: absolute;
     left: 0;
     top: 0;
@@ -132,6 +132,21 @@ const Container = styled.header`
     @media only screen and (max-width: 960px) {
       height: 34rem;
       transform: skew(0, -6deg) translateY(-30%);
+    }
+
+    @media only screen and (max-width: 500px) {
+      height: 38rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    img {
+      display: none;
+    }
+
+    ${Block} {
+      margin-top: 1rem;
+      width: 100%;
     }
   }
 `;

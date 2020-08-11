@@ -2,9 +2,6 @@ import React from 'react';
 import Container from '../elements/Container';
 import List from '../elements/List';
 import Button from '../elements/Button';
-import COVID from '../images/covid19.webp';
-import Expense from '../images/expense.webp';
-import Spinsight from '../images/spinsight.webp';
 import COVIDJPG from '../images/covid19.jpg';
 import ExpenseJPG from '../images/expense.jpg';
 import SpinsightJPG from '../images/spinsight.jpg';
@@ -14,7 +11,6 @@ const Project = () => {
   const projectLists = [
     {
       jpg: COVIDJPG,
-      webp: COVID,
       title: 'COVID-19 Tracker',
       web: 'https://covid19-taiwan.netlify.app/',
       github: 'https://github.com/MinHuang-TW/corona-tracker',
@@ -28,7 +24,6 @@ const Project = () => {
     },
     {
       jpg: ExpenseJPG,
-      webp: Expense,
       title: 'Expense Tracker',
       web: 'https://fierce-dawn-03917.herokuapp.com/',
       github: 'https://github.com/MinHuang-TW/expense-tracker',
@@ -43,7 +38,6 @@ const Project = () => {
     },
     {
       jpg: SpinsightJPG,
-      webp: Spinsight,
       title: 'SpInsight',
       web: 'https://spinsight.netlify.app/',
       github: 'https://github.com/MinHuang-TW/spinsight',
@@ -61,9 +55,9 @@ const Project = () => {
   return (
     <ProjectContainer>
       <h1>Projects</h1>
-      {projectLists.map(({ webp, web, github, title, text }) => (
+      {projectLists.map(({ jpg, web, github, title, text }) => (
         <ProjectBlock key={title}>
-          <ProjectImage img={webp}>
+          <ProjectImage img={jpg}>
             <div>
               <Button href={web} target='_blank'>
                 Live Demo
